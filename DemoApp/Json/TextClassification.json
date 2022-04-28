@@ -1,0 +1,210 @@
+[
+  {
+    "label": "Hi",
+    "text": "Hello"
+  },
+  {
+    "label": "I am doing fine! What about you?",
+    "text": "are you"
+  },
+  {
+    "label": "Wow! sounds great",
+    "text": "I am also fine"
+  },
+  {
+    "label": "My name is Text Classifier",
+    "text": "What is your name"
+  },
+  {
+    "label": "My name is Text Classifier",
+    "text": "Name"
+  },
+  {
+    "label": "It's ok ok, not so great",
+    "text": "weather today"
+  },
+  {
+    "label": "It's ok ok, not so great",
+    "text": "Weather today"
+  },
+  {
+    "label": "Visit a hill station or a cold country",
+    "text": "summers"
+  },
+  {
+    "label": "Visit a hill station or a cold country",
+    "text": "summer"
+  },
+  {
+    "label": "I am a text classifier app who give responses according to your questions ",
+    "text": "yourself"
+  },
+  {
+    "label": "Today a man knocked on my door and asked for a small donation toward the local swimming pool. I gave him a glass of water",
+    "text": "Joke"
+  },
+  {
+    "label": "Visit a hill station or a cold country",
+    "text": "Summers"
+  },
+  {
+    "label": "Visit a hill station or a cold country",
+    "text": "Summer"
+  },
+  {
+    "label": "I am a text classifier app who give responses according to your questions ",
+    "text": "Yourself"
+  },
+  {
+    "label": "You are welcome",
+    "text": "Thank you"
+  },
+  {
+    "label": "develop a new hobby for yourself",
+    "text": "free time"
+  },
+  {
+    "label": "speak to them in personal and sort it out",
+    "text": "avoid missunderstding with our beloved ones"
+  },
+  {
+    "label": "Thank you and you too",
+    "text": "Have a nice day"
+  },
+  {
+    "label": "Bye and have a nice day",
+    "text": "bye"
+  },
+  {
+    "label": "Hello",
+    "text": "Hi"
+  },
+  {
+    "label": "You will face many defeats in life but never feel defeated.",
+    "text": "quote"
+  },
+  {
+    "label": "Life is more strict than teacher... Bcoz Teacher teaches lesson then conducts exam, But Life first conducts Exam then teaches Lessons. Happy morning. . .",
+    "text": "Quote"
+  },
+  {
+    "label": "Bye and have a nice day",
+    "text": "Bye"
+  },
+  {
+    "label": "speak to them in personal and sort it out",
+    "text": "Avoid missunderstding with our beloved ones"
+  },
+  {
+    "label": "develop a new hobby for yourself",
+    "text": "Free time"
+  },
+  {
+    "label": "Visit a hill station or a cold country",
+    "text": "summers"
+  },
+  {
+    "label": "Today a man knocked on my door and asked for a small donation toward the local swimming pool. I gave him a glass of water",
+    "text": "Joke"
+  },
+  {
+    "label": "Its a spam message",
+    "text": "Congratulations ur awarded 500 of CD vouchers or 125gift guaranteed & Free entry 2 100 wkly draw txt MUSIC to 87066"
+  },
+  {
+    "label": "Brandon Sanderson",
+    "text": "Author of the Mistborn series"
+  },
+  {
+    "label": "What did one DNA say to the other DNA?\nDo these genes make me look fat?",
+    "text": "Please tell me a joke"
+  },
+  {
+    "label": "Why was six afraid of seven?\nBecause seven eight nine.",
+    "text": "Another joke"
+  },
+  {
+    "label": "What happens to an illegally parked frog?\nIt gets toad away.",
+    "text": "One more joke please"
+  },
+  {
+    "label": "What do you call an aligator wearing a vest?\nAn investigator",
+    "text": "Can you tell me a joke"
+  },
+  {
+    "label": "Knock, knock.\nWho’s there?\nNobel.\nNobel who?\nNo­bel, so I knock knocked.",
+    "text": "Tell me a joke"
+  },
+  {
+    "label": "Why did the teddy bear say no to dessert?\nBecause he was stuffed.",
+    "text": "another joke"
+  },
+  {
+    "label": "The quick brown fox jumped over the lazy dog",
+    "text": "Who jumped over the lazy dog"
+  },
+  {
+    "label": "The quick brown fox jumped over the lazy dog",
+    "text": "Pangram"
+  },
+  {
+    "label": "Pack my box with five dozen liquor jugs.",
+    "text": "pangram"
+  },
+  {
+     "label": "A pangram is a sentence that includes every letter of the alphabet, A through Z",
+     "text": "What is a pangram"
+  },
+  {
+    "label": "Two driven jocks help fax my big quiz",
+    "text": "One more pangram"
+  },
+  {
+    "label": "My girl wove six dozen plaid jackets before she quit",
+    "text": "Another pangram"
+  },
+  {
+    "label": "A big bug bit the little beetle\nbut the little beetle bit the big bug back",
+    "text": "Tongue twister"
+  },
+  {
+    "label": "How much wood would a woodchuck chuck\nif a woodchuck could chuck wood?\nHe would chuck, he would, as much as he could,\nand chuck as much wood  As a woodchuck would\nif a woodchuck could chuck wood",
+    "text": "Tell me a tongue twister"
+  },
+  {
+    "label": "Six sick hicks nick six slick bricks with picks and sticks",
+    "text": "Another tongue twister"
+  },
+  {
+    "label": "The sixth sick sheik's sixth sheep's sick",
+    "text": "another tongue twister"
+  },
+  {
+    "label": "Is it harder to toot\nor to tutor the two tooters to toot?",
+    "text": "tell me a tongue twister"
+  },
+  {
+    "label": "You’d be in good shape...\nif you ran as much as your mouth.",
+    "text": "Sarcastic oneliners"
+  },
+  {
+    "label": "Fun fact: Alcohol increases the size of the ‘send’ button by 89%.",
+    "text": "sarcastic oneliners"
+  },
+  {
+    "label": "Don't you hate it when someone answers their own questions?\nI do.",
+    "text": "one liner"
+  },
+  {
+    "label": "My dad died when we couldn't remember his blood type. As he died, he kept insisting for us to \"be positive\", but it's hard without him.",
+    "text": "One liner"
+  },
+  {
+    "label": "Most people are shocked when they find out how bad I am as an electrician.",
+    "text": "one-liner"
+  },
+  {
+    "label": "Adam & Eve were the first ones to ignore the Apple terms and conditions.",
+    "text": "One-liner"
+  }
+]
