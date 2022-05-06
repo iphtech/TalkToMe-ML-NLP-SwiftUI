@@ -112,6 +112,7 @@
 			children = (
 				8FBB028528250D9300D48C6D /* ContentView.swift */,
 				8FBB029B28251D1300D48C6D /* SearchView.swift */,
+				8FBB029E28251D5200D48C6D /* MLModel.swift */,
 				8FBB02BF28252CAE00D48C6D /* ArcView.swift */,
 			);
 			path = Views;
@@ -136,7 +137,6 @@
 		8FBB02C82825335800D48C6D /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				8FBB029E28251D5200D48C6D /* MLModel.swift */,
 				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
 			);
 			path = Functions;
