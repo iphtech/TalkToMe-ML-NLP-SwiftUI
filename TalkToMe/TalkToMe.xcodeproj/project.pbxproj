@@ -68,14 +68,11 @@
 		8FBB028228250D9300D48C6D /* TalkToMe */ = {
 			isa = PBXGroup;
 			children = (
+				8FBB02B92825289100D48C6D /* TalkToMe_Views */,
 				8FBB028328250D9300D48C6D /* TalkToMeApp.swift */,
-				8FBB028528250D9300D48C6D /* ContentView.swift */,
 				8FBB028728250D9600D48C6D /* Assets.xcassets */,
 				8FBB028C28250D9600D48C6D /* Info.plist */,
 				8FBB028928250D9600D48C6D /* Preview Content */,
-				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
-				8FBB029B28251D1300D48C6D /* SearchView.swift */,
-				8FBB029E28251D5200D48C6D /* MLModel.swift */,
 			);
 			path = TalkToMe;
 			sourceTree = "<group>";
@@ -102,6 +99,17 @@
 				8FBB02A628251E6C00D48C6D /* TextClassifier.mlmodel */,
 			);
 			path = CoreMLModel;
+			sourceTree = "<group>";
+		};
+		8FBB02B92825289100D48C6D /* TalkToMe_Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB028528250D9300D48C6D /* ContentView.swift */,
+				8FBB029B28251D1300D48C6D /* SearchView.swift */,
+				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
+				8FBB029E28251D5200D48C6D /* MLModel.swift */,
+			);
+			path = TalkToMe_Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
