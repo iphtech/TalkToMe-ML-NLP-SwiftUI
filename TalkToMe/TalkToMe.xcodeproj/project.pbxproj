@@ -72,9 +72,10 @@
 		8FBB028228250D9300D48C6D /* TalkToMe */ = {
 			isa = PBXGroup;
 			children = (
-				8FBB02C228252D8B00D48C6D /* ExtensionReadability */,
-				8FBB02B92825289100D48C6D /* TalkToMe_Views */,
-				8FBB028328250D9300D48C6D /* TalkToMeApp.swift */,
+				8FBB02C82825335800D48C6D /* Functions */,
+				8FBB02C72825332900D48C6D /* Others */,
+				8FBB02C228252D8B00D48C6D /* Extensions */,
+				8FBB02B92825289100D48C6D /* Views */,
 				8FBB028728250D9600D48C6D /* Assets.xcassets */,
 				8FBB028C28250D9600D48C6D /* Info.plist */,
 				8FBB028928250D9600D48C6D /* Preview Content */,
@@ -106,24 +107,39 @@
 			path = CoreMLModel;
 			sourceTree = "<group>";
 		};
-		8FBB02B92825289100D48C6D /* TalkToMe_Views */ = {
+		8FBB02B92825289100D48C6D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				8FBB028528250D9300D48C6D /* ContentView.swift */,
 				8FBB029B28251D1300D48C6D /* SearchView.swift */,
 				8FBB02BF28252CAE00D48C6D /* ArcView.swift */,
-				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
-				8FBB029E28251D5200D48C6D /* MLModel.swift */,
 			);
-			path = TalkToMe_Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		8FBB02C228252D8B00D48C6D /* ExtensionReadability */ = {
+		8FBB02C228252D8B00D48C6D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				8FBB02C328252DB700D48C6D /* Extension.swift */,
 			);
-			path = ExtensionReadability;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8FBB02C72825332900D48C6D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB028328250D9300D48C6D /* TalkToMeApp.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		8FBB02C82825335800D48C6D /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB029E28251D5200D48C6D /* MLModel.swift */,
+				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
