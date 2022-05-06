@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FBB028428250D9300D48C6D /* TalkToMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB028328250D9300D48C6D /* TalkToMeApp.swift */; };
+		8FBB028628250D9300D48C6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB028528250D9300D48C6D /* ContentView.swift */; };
+		8FBB028828250D9600D48C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB028728250D9600D48C6D /* Assets.xcassets */; };
+		8FBB028B28250D9600D48C6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB028A28250D9600D48C6D /* Preview Assets.xcassets */; };
+		8FBB029928251C8800D48C6D /* RecordFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB029828251C8800D48C6D /* RecordFunctions.swift */; };
+		8FBB029C28251D1300D48C6D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB029B28251D1300D48C6D /* SearchView.swift */; };
+		8FBB029F28251D5200D48C6D /* MLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB029E28251D5200D48C6D /* MLModel.swift */; };
+		8FBB02A328251DC300D48C6D /* TextClassification.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FBB02A228251DC300D48C6D /* TextClassification.json */; };
+		8FBB02A728251E6C00D48C6D /* TextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB02A628251E6C00D48C6D /* TextClassifier.mlmodel */; };
+		8FBB02AB28251F3700D48C6D /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 8FBB02AA28251F3700D48C6D /* SwiftSpeech */; };
+		8FBB02B028251F9300D48C6D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8FBB02AF28251F9300D48C6D /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8FBB028028250D9300D48C6D /* TalkToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FBB028328250D9300D48C6D /* TalkToMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMeApp.swift; sourceTree = "<group>"; };
+		8FBB028528250D9300D48C6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FBB028728250D9600D48C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FBB028A28250D9600D48C6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FBB028C28250D9600D48C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBB029828251C8800D48C6D /* RecordFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFunctions.swift; sourceTree = "<group>"; };
+		8FBB029B28251D1300D48C6D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8FBB029E28251D5200D48C6D /* MLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
+		8FBB02A228251DC300D48C6D /* TextClassification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TextClassification.json; sourceTree = "<group>"; };
+		8FBB02A628251E6C00D48C6D /* TextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextClassifier.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FBB027D28250D9300D48C6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBB02B028251F9300D48C6D /* ComposableArchitecture in Frameworks */,
+				8FBB02AB28251F3700D48C6D /* SwiftSpeech in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FBB027728250D9300D48C6D = {
+			isa = PBXGroup;
+			children = (
+				8FBB02A528251DCB00D48C6D /* CoreMLModel */,
+				8FBB02A128251D7E00D48C6D /* JsonFile */,
+				8FBB028228250D9300D48C6D /* TalkToMe */,
+				8FBB028128250D9300D48C6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FBB028128250D9300D48C6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB028028250D9300D48C6D /* TalkToMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FBB028228250D9300D48C6D /* TalkToMe */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB028328250D9300D48C6D /* TalkToMeApp.swift */,
+				8FBB028528250D9300D48C6D /* ContentView.swift */,
+				8FBB028728250D9600D48C6D /* Assets.xcassets */,
+				8FBB028C28250D9600D48C6D /* Info.plist */,
+				8FBB028928250D9600D48C6D /* Preview Content */,
+				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
+				8FBB029B28251D1300D48C6D /* SearchView.swift */,
+				8FBB029E28251D5200D48C6D /* MLModel.swift */,
+			);
+			path = TalkToMe;
+			sourceTree = "<group>";
+		};
+		8FBB028928250D9600D48C6D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB028A28250D9600D48C6D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FBB02A128251D7E00D48C6D /* JsonFile */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB02A228251DC300D48C6D /* TextClassification.json */,
+			);
+			path = JsonFile;
+			sourceTree = "<group>";
+		};
+		8FBB02A528251DCB00D48C6D /* CoreMLModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB02A628251E6C00D48C6D /* TextClassifier.mlmodel */,
+			);
+			path = CoreMLModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FBB027F28250D9300D48C6D /* TalkToMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FBB028F28250D9600D48C6D /* Build configuration list for PBXNativeTarget "TalkToMe" */;
+			buildPhases = (
+				8FBB027C28250D9300D48C6D /* Sources */,
+				8FBB027D28250D9300D48C6D /* Frameworks */,
+				8FBB027E28250D9300D48C6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkToMe;
+			packageProductDependencies = (
+				8FBB02AA28251F3700D48C6D /* SwiftSpeech */,
+				8FBB02AF28251F9300D48C6D /* ComposableArchitecture */,
+			);
+			productName = TalkToMe;
+			productReference = 8FBB028028250D9300D48C6D /* TalkToMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FBB027828250D9300D48C6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8FBB027F28250D9300D48C6D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8FBB027B28250D9300D48C6D /* Build configuration list for PBXProject "TalkToMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FBB027728250D9300D48C6D;
+			packageReferences = (
+				8FBB02A928251F3700D48C6D /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+				8FBB02AE28251F9300D48C6D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 8FBB028128250D9300D48C6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FBB027F28250D9300D48C6D /* TalkToMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FBB027E28250D9300D48C6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBB02A328251DC300D48C6D /* TextClassification.json in Resources */,
+				8FBB028B28250D9600D48C6D /* Preview Assets.xcassets in Resources */,
+				8FBB028828250D9600D48C6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FBB027C28250D9300D48C6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBB029F28251D5200D48C6D /* MLModel.swift in Sources */,
+				8FBB029C28251D1300D48C6D /* SearchView.swift in Sources */,
+				8FBB029928251C8800D48C6D /* RecordFunctions.swift in Sources */,
+				8FBB028628250D9300D48C6D /* ContentView.swift in Sources */,
+				8FBB02A728251E6C00D48C6D /* TextClassifier.mlmodel in Sources */,
+				8FBB028428250D9300D48C6D /* TalkToMeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8FBB028D28250D9600D48C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FBB028E28250D9600D48C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FBB029028250D9600D48C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkToMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 3EGXVN72T4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TalkToMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.TalkToMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FBB029128250D9600D48C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TalkToMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 3EGXVN72T4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TalkToMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.TalkToMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FBB027B28250D9300D48C6D /* Build configuration list for PBXProject "TalkToMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FBB028D28250D9600D48C6D /* Debug */,
+				8FBB028E28250D9600D48C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FBB028F28250D9600D48C6D /* Build configuration list for PBXNativeTarget "TalkToMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FBB029028250D9600D48C6D /* Debug */,
+				8FBB029128250D9600D48C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FBB02A928251F3700D48C6D /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.3;
+			};
+		};
+		8FBB02AE28251F9300D48C6D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.34.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FBB02AA28251F3700D48C6D /* SwiftSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FBB02A928251F3700D48C6D /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
+		};
+		8FBB02AF28251F9300D48C6D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FBB02AE28251F9300D48C6D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8FBB027828250D9300D48C6D /* Project object */;
+}
