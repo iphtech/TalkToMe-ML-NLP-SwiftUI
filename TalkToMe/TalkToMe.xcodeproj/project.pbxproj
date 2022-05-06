@@ -18,6 +18,8 @@
 		8FBB02A728251E6C00D48C6D /* TextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB02A628251E6C00D48C6D /* TextClassifier.mlmodel */; };
 		8FBB02AB28251F3700D48C6D /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 8FBB02AA28251F3700D48C6D /* SwiftSpeech */; };
 		8FBB02B028251F9300D48C6D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8FBB02AF28251F9300D48C6D /* ComposableArchitecture */; };
+		8FBB02C028252CAE00D48C6D /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB02BF28252CAE00D48C6D /* ArcView.swift */; };
+		8FBB02C428252DB700D48C6D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB02C328252DB700D48C6D /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		8FBB029E28251D5200D48C6D /* MLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModel.swift; sourceTree = "<group>"; };
 		8FBB02A228251DC300D48C6D /* TextClassification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TextClassification.json; sourceTree = "<group>"; };
 		8FBB02A628251E6C00D48C6D /* TextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextClassifier.mlmodel; sourceTree = "<group>"; };
+		8FBB02BF28252CAE00D48C6D /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		8FBB02C328252DB700D48C6D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		8FBB028228250D9300D48C6D /* TalkToMe */ = {
 			isa = PBXGroup;
 			children = (
+				8FBB02C228252D8B00D48C6D /* ExtensionReadability */,
 				8FBB02B92825289100D48C6D /* TalkToMe_Views */,
 				8FBB028328250D9300D48C6D /* TalkToMeApp.swift */,
 				8FBB028728250D9600D48C6D /* Assets.xcassets */,
@@ -106,10 +111,19 @@
 			children = (
 				8FBB028528250D9300D48C6D /* ContentView.swift */,
 				8FBB029B28251D1300D48C6D /* SearchView.swift */,
+				8FBB02BF28252CAE00D48C6D /* ArcView.swift */,
 				8FBB029828251C8800D48C6D /* RecordFunctions.swift */,
 				8FBB029E28251D5200D48C6D /* MLModel.swift */,
 			);
 			path = TalkToMe_Views;
+			sourceTree = "<group>";
+		};
+		8FBB02C228252D8B00D48C6D /* ExtensionReadability */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB02C328252DB700D48C6D /* Extension.swift */,
+			);
+			path = ExtensionReadability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +209,9 @@
 				8FBB029928251C8800D48C6D /* RecordFunctions.swift in Sources */,
 				8FBB028628250D9300D48C6D /* ContentView.swift in Sources */,
 				8FBB02A728251E6C00D48C6D /* TextClassifier.mlmodel in Sources */,
+				8FBB02C028252CAE00D48C6D /* ArcView.swift in Sources */,
 				8FBB028428250D9300D48C6D /* TalkToMeApp.swift in Sources */,
+				8FBB02C428252DB700D48C6D /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,8 @@ var result: String = ""
 
 struct SearchView: View {
     
+//MARK:- Properties
+    
     @State var isRecording: Bool = false
     @State private var speechSession: SwiftSpeech.Session?
     @State private var cancelBag = Set<AnyCancellable>()
@@ -28,6 +30,7 @@ struct SearchView: View {
     var start =  Color(#colorLiteral(red: 0.1429229878, green: 0.8067259491, blue: 1, alpha: 1))
     var end =  Color(#colorLiteral(red: 0.07115641946, green: 0.2028132513, blue: 0.5977793992, alpha: 1))
     
+//MARK:- Body
     
     var body: some View {
         
@@ -36,20 +39,9 @@ struct SearchView: View {
                 VStack {
                     Spacer()
                     
-                    Text(searchQuery)   //displaying searched query
-                        .font(.custom("Arial Rounded MT Bold", size: 40))
-                        .bold()
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .offset(y: 150)
+                    queryText
                     
-                                            
-                    Text(result)  //displaying result from model
-                        .font(.custom("Arial Rounded MT Bold", size: 25))
-                        .bold()
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .position(x: 180, y: 300)
+                    modelOutput
                     
                 }.padding(.horizontal, 20)   //VSTACK
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)   //frame for gradient color above arc
@@ -58,7 +50,7 @@ struct SearchView: View {
                 
                 VStack {
                     ZStack {
-                        Arc(startAngle: .degrees(0), endAngle: .degrees(180), clockwise: true) //drawing arc by passing start angle and end angle
+                        ArcView(startAngle: .degrees(0), endAngle: .degrees(180), clockwise: true) //drawing arc by passing start angle and end angle
                             .fill(Color.white)
                             .frame(width: 500 , height: 10)
                         
@@ -81,6 +73,8 @@ struct SearchView: View {
         } //ZSTACK
     }  //BODY
 
+    //MARK:- Gesture
+    
     //define type of gesture for mic button
         var gesture: some Gesture {
             
@@ -141,24 +135,6 @@ struct SearchView: View {
         
     }
 
-}
-
-// struct to draw arc shape
-struct Arc: Shape {
-  let startAngle: Angle   //start angle for arc
-  let endAngle: Angle     //end angle for arc
-  let clockwise: Bool     //to start arc in clockwise direction
-
-  func path(in rect: CGRect) -> Path {
-    var path = Path()
-    let radius = max(rect.size.width, rect.size.height) / 2  //radius of arc
-    path.addArc(center: CGPoint(x: rect.midX, y: rect.midY),
-                radius: radius,
-                startAngle: startAngle,
-                endAngle: endAngle,
-                clockwise: clockwise)  // drawing arc
-    return path
-  }
 }
 
 
