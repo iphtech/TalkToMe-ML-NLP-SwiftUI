@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-//MARK:- Extension Readability
+//MARK:- Readability Extension
 extension SearchView {
     
     var queryText: some View  {
