@@ -54,8 +54,6 @@
 		8FBB027728250D9300D48C6D = {
 			isa = PBXGroup;
 			children = (
-				8FBB02A528251DCB00D48C6D /* CoreMLModel */,
-				8FBB02A128251D7E00D48C6D /* JsonFile */,
 				8FBB028228250D9300D48C6D /* TalkToMe */,
 				8FBB028128250D9300D48C6D /* Products */,
 			);
@@ -72,6 +70,8 @@
 		8FBB028228250D9300D48C6D /* TalkToMe */ = {
 			isa = PBXGroup;
 			children = (
+				8FBB02A528251DCB00D48C6D /* CoreMLModel */,
+				8FBB02A128251D7E00D48C6D /* JsonFile */,
 				8FBB02C82825335800D48C6D /* Functions */,
 				8FBB02C72825332900D48C6D /* Others */,
 				8FBB02C228252D8B00D48C6D /* Extensions */,
